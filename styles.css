@@ -773,6 +773,10 @@ textarea {
   resize: vertical;
 }
 
+.honeypot {
+  display: none;
+}
+
 .form-note,
 .muted {
   color: var(--muted);

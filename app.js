@@ -1,5 +1,3 @@
-const contactEmail = "inquiry@example.com";
-
 const materialGrid = document.querySelector("#productGrid");
 const detailTitle = document.querySelector("#detailTitle");
 const detailPanel = document.querySelector("#detailPanel");
@@ -124,24 +122,6 @@ document.addEventListener("click", (event) => {
     }
     document.querySelector("#contact").scrollIntoView({ behavior: "smooth", block: "start" });
   }
-});
-
-document.querySelector("#inquiryForm").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const formData = new FormData(event.currentTarget);
-  const subject = encodeURIComponent(`Website inquiry from ${formData.get("name")}`);
-  const body = encodeURIComponent(
-    [
-      `Name: ${formData.get("name")}`,
-      `Email: ${formData.get("email")}`,
-      `Company / shop: ${formData.get("company") || "-"}`,
-      `Product interest: ${formData.get("product")}`,
-      "",
-      "Message:",
-      formData.get("message"),
-    ].join("\n"),
-  );
-  window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
 });
 
 renderProductOptions();

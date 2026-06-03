@@ -15,6 +15,7 @@
 - Keep product/form images around 300-500 KB when possible.
 - A good maximum size for product images is about 1200 px wide or tall.
 - Prefer one strong image per stone family plus 4-6 form images. Avoid making a separate image for every tiny SKU unless it is truly needed.
+- `index.html` keeps the original polished hero image. `index-hero-option3.html` is a comparison version using `assets/hero-rough-workshop-option-3.jpg`.
 
 ## Performance rules
 
@@ -27,4 +28,4 @@
 
 - Open `index.html` in a browser to preview the site.
 - After editing data, confirm that every image path in `products.js` exists under `assets/materials/`.
-- Replace the contact email in `app.js` before publishing.
+- The contact form posts to FormSubmit at `ninghaostone@gmail.com`; the first live submission may require email confirmation.
